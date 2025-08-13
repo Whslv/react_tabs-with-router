@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink as Link } from 'react-router-dom';
 import 'bulma/css/bulma.css';
 import '@fortawesome/fontawesome-free/css/all.css';
 import './App.scss';
@@ -16,12 +16,12 @@ export const App = () => (
     >
       <div className="container">
         <div className="navbar-brand">
-          <NavLink to="/" className={getLinkClass}>
+          <Link to="/" className={getLinkClass}>
             Home
-          </NavLink>
-          <NavLink to="tabs" className={getLinkClass}>
+          </Link>
+          <Link to="tabs" className={getLinkClass}>
             Tabs
-          </NavLink>
+          </Link>
         </div>
       </div>
     </nav>
